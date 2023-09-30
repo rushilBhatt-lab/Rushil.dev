@@ -1,4 +1,5 @@
 @import 'assets/stylings/colors';
+@import 'assets/stylings/fonts.scss';
 
 .App {
 	text-align: center;
@@ -15,6 +16,7 @@ body {
 	padding: 0%;
 	margin: 0%;
 	box-sizing: border-box;
+	font-family: NeurialGrotesk;
 }
 ::-webkit-scrollbar {
 	width: 4px;

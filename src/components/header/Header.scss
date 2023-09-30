@@ -8,7 +8,6 @@
         align-items: center;
         justify-content: center;
         color: whitesmoke;
-        font-family: raleway;
         font-weight: 400;
         letter-spacing: 1px;
         flex-direction: column;
@@ -27,7 +26,6 @@
 	&__name {
 		z-index: 2;
 		font-weight: 700;
-		font-family: poppins;
 		font-size: 65px;
 	}
 
@@ -70,7 +68,6 @@
 	}
 
 	&--color {
-		color: #c70039;
 		transition: all 0.4s ease;
 	}
 
