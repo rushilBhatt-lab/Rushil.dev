@@ -1,26 +1,24 @@
 .Navigation {
 	&__wrapper {
-        width: 100%;
-        height: auto;
-        padding: 25px 40px 25px 50px;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-shadow: 0px 0px 10px rgb(0 0 0 / 9%);
-        z-index: 200;
-        align-items: center;
-        background: transparent;
-        font-size: 1.7rem;
+		width: 100%;
+		height: auto;
+		padding: 25px 40px 25px 50px;
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 0px 10px rgb(0 0 0 / 9%);
+		z-index: 200;
+		align-items: center;
+		background: transparent;
+		font-size: 1.7rem;
 		color: #e1e1e1;
 
-        @media (min-width: 992px) {
-            flex-flow: row nowrap;
-           // justify-content: flex-start;
-            
-        }
-
+		@media (min-width: 992px) {
+			flex-flow: row nowrap;
+			// justify-content: flex-start;
+		}
 	}
 	a {
 		padding: 10px 14px;
@@ -29,10 +27,9 @@
 		font-size: 1.7rem;
 		opacity: 0.7;
 		transition: all 0.4s ease;
-        cursor: pointer;
-        &:hover{
-            text-decoration: underline;
-            
-        }
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
