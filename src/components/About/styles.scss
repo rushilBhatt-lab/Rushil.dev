@@ -1,39 +1,66 @@
-.AbovePage {
-    color: #c6c6c6 !important;
-
+.AboutPage {
+	color: #c6c6c6 !important;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
 
 	&__title {
 		font-weight: 900;
 		margin: 4rem 0rem 1.5rem;
 		position: relative;
-		
-	} 
-    p{
-        font-size: calc(0.875em + 0.9px);
-            margin-top: 0.6rem;
-            line-height: 2;
-            font-weight: 400;
-          
-    }
+	}
+	&__timeline {
+		list-style-type: none;
+		position: relative;
 
-    &__timeLine{
-        &::before{
-                content: " ";
-                    background: #ffffff5e;
-                    display: inline-block;
-                    position: absolute;
-                    left: 0px;
-                    width: 1px;
-                    top: 4px;
-                    height: 100%;
-                    z-index: 400;
-        }
+		&::before {
+			content: ' ';
+			background: #ffffff5e;
+			display: inline-block;
+			position: absolute;
+			left: 0px;
+			width: 1px;
+			//top: 4px;
+			top: 11px;
+			height: 100%;
+			z-index: 400;
+		}
+	}
+	&__description {
+		font-size: calc(0.875em + 0.9px);
+		margin-top: 0.6rem;
+		line-height: 2;
+		font-weight: 400;
+		width: 100%;
+		display: flex;
+		margin-bottom: 1rem;
+        margin-left: 20px;
+        text-align: left;
+        list-style-type: disc;
+	}
 
-        li{
-                margin: 3rem 0px;
-                    padding-left: 20px;
-                    margin-top: 0.5rem;
-        }
-    }
+	&__subTitle {
+		float: left;
+		margin: 1rem 0px;
+		padding-left: 20px;
+		margin-top: 0.5rem !important;
+		&::after {
+			content: ' ';
+			background: #080f18;
+			display: inline-block;
+			position: absolute;
+			border-radius: 50%;
+			border: 2px solid #e1e1e1;
+			left: -9px;
+			width: 15px;
+			height: 15px;
+			margin-top: -1px;
+			z-index: 400;
+		}
+	}
 }
 

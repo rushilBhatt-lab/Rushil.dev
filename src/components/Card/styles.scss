@@ -1,7 +1,7 @@
 .PortfolioCard {
 	grid-gap: 5rem;
 	display: grid;
-	gap: 5rem;
+	gap: 1rem;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 	height: auto;
@@ -10,11 +10,9 @@
 
 	&__container {
 		flex-direction: row;
-		gap: 8rem;
+		gap: 5rem;
 		height: 20rem;
 		padding: 2rem;
-
-		background-color: #fff;
 		border-radius: 1.7rem;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		display: flex;
@@ -36,18 +34,11 @@
 		justify-content: center;
 		text-align: center;
 		width: 30rem;
-
-		img {
-			width: 7rem;
-			position: absolute;
-			top: -2px;
-			right: -19px;
-		}
+			color: #e1e1e1;
 
 		h3 {
 			font-size: 16px;
 			text-transform: uppercase;
-			color: #2e2e2e;
 			margin-bottom: 2rem;
 			position: relative;
 			display: flex;
@@ -70,6 +61,13 @@
 		gap: 1rem;
 		justify-content: center;
 		margin-top: 1rem;
+
+        p {
+            border: 1px solid #4ba5f9;
+              
+                    padding: 7px;
+                    border-radius: 6px;
+        }
 	}
 
 	&__links {
@@ -87,6 +85,7 @@
 			display: flex;
 			align-items: center;
 			gap: 5px;
+            cursor: pointer;
 
 			i {
 				font-size: 2.8rem;
@@ -97,11 +96,10 @@
 			}
 
 			img {
-				width: 3.5rem;
+				width: 1.5rem;
 			}
 
 			&:hover {
-				color: white;
 				transition: all 0.3s;
 			}
 		}

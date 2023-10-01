@@ -1,26 +1,37 @@
+import { FC } from 'react';
 import GithubIcon from './Github.svg';
 import RedirectIcon from './Redirect.svg';
 import './styles.scss';
 
-const PortfolioCard = () => {
+interface Props {
+	image?: HTMLImageElement;
+	title: string;
+	description: string;
+	stack: string[];
+	liveAppLink: string;
+	githubLink: string;
+}
+const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, githubLink }) => {
 	return (
 		<div className="PortfolioCard">
 			<div className="PortfolioCard__container">
 				<div className="PortfolioCard__image"></div>
 				<div className="PortfolioCard__text">
-					<h3>Kanban-task-manager</h3>
-					<p>A task management app using Drag and drop API to make the task management at ease</p>
+					<h3>{title}</h3>
+					<p>{description}</p>
 					<div className="PortfolioCard__stack">
-						<p>React</p> <p>SCSS</p>
+						{stack.map((technology, index) => (
+							<p key={index}>{technology}</p>
+						))}
 					</div>
 					<div className="PortfolioCard__links">
-						<a target="_blank" rel="noreferrer">
-							Live Demo
-							<img src={RedirectIcon} />
+						<a target="_blank" rel="noreferrer" href={liveAppLink}>
+							<p>Live Demo</p>
+							<img src={RedirectIcon} alt="Redirect Icon" />
 						</a>
-						<a target="_blank" rel="noreferrer">
-							Source Code
-							<img src={GithubIcon} />
+						<a target="_blank" rel="noreferrer" href={githubLink}>
+							<p>Source Code</p>
+							<img src={GithubIcon} alt="Github Icon" />
 						</a>
 					</div>
 				</div>
