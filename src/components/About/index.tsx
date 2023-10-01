@@ -31,6 +31,7 @@ const About = () => {
 					</p>
 				</ul>
 			</div>
+		</div>
 	);
 };
 
