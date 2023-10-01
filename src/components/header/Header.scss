@@ -1,18 +1,18 @@
 .HeaderComponent {
 	&__wrapper {
-        height: 100vh;
-        width: 100%;
-        float: left;
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        color: whitesmoke;
-        font-weight: 400;
-        letter-spacing: 1px;
-        flex-direction: column;
-        font-size: 50px;
-        z-index: 1;
+		height: 100vh;
+		width: 100%;
+		float: left;
+		display: flex;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		color: whitesmoke;
+		font-weight: 400;
+		letter-spacing: 1px;
+		flex-direction: column;
+		font-size: 50px;
+		z-index: 1;
 	}
 
 	&__box {
@@ -71,31 +71,31 @@
 		transition: all 0.4s ease;
 	}
 
-    &__contact{
-        display: flex;
-        position: absolute;
-        width: 10%;
-        right: 0;
-        top: 0;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        z-index: 3;
+	&__contact {
+		display: flex;
+		position: absolute;
+		width: 10%;
+		right: 0;
+		top: 0;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		z-index: 3;
 
-        a{
-            z-index: 3;
-        }
+		a {
+			z-index: 3;
+		}
 
-        img{
-            margin:10px;
-            height:30px;
-            opacity: .6;
-            transition: all .4s ease;
-            &:hover{
-                opacity: 1;
-                transform: scale(1.1);
-            }
-        }
-    }
+		img {
+			margin: 10px;
+			height: 30px;
+			opacity: 0.6;
+			transition: all 0.4s ease;
+			&:hover {
+				opacity: 1;
+				transform: scale(1.1);
+			}
+		}
+	}
 }
