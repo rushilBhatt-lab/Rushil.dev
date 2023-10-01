@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { APP_URL } from 'common';
 import './Navigation.scss';
 
 const NavigationMain = () => {
+	const location = useLocation();
 	return (
 		<div className="Navigation">
 			<div className="Navigation__wrapper">
@@ -15,9 +16,9 @@ const NavigationMain = () => {
 				</div>
 				{
 					<div className="Navigation__links">
-						<Link to={APP_URL.about}>ABOUT</Link>
-						<Link to={APP_URL.portfolio}>PORTFOLIO</Link>
-						<Link to={APP_URL.contact}>CONTACT</Link>
+						{location.pathname !== APP_URL.about && <Link to={APP_URL.about}>About</Link>}
+						{location.pathname !== APP_URL.portfolio && <Link to={APP_URL.portfolio}>Porfoilo</Link>}
+						{location.pathname !== APP_URL.contact && <Link to={APP_URL.contact}>Contact</Link>}
 					</div>
 				}
 			</div>

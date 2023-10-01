@@ -1,11 +1,39 @@
-.AbovePage{
-    padding-top: 100px;
-         
+.AbovePage {
+    color: #c6c6c6 !important;
 
-            &__title{
-font-weight: 900;
-    margin: 4rem 0rem 1.5rem;
-    position: relative;
-    color: #e1e1e1
-            }
+
+	&__title {
+		font-weight: 900;
+		margin: 4rem 0rem 1.5rem;
+		position: relative;
+		
+	} 
+    p{
+        font-size: calc(0.875em + 0.9px);
+            margin-top: 0.6rem;
+            line-height: 2;
+            font-weight: 400;
+          
+    }
+
+    &__timeLine{
+        &::before{
+                content: " ";
+                    background: #ffffff5e;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0px;
+                    width: 1px;
+                    top: 4px;
+                    height: 100%;
+                    z-index: 400;
+        }
+
+        li{
+                margin: 3rem 0px;
+                    padding-left: 20px;
+                    margin-top: 0.5rem;
+        }
+    }
 }
+
