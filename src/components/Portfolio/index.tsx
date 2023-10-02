@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import PortfolioCard from 'components/Card';
-import AppContext from 'components/Utils/Utility';
+import AppContext from 'components/Utils/context';
 import './styles.scss';
 import { ProjectDataInterface } from 'AppData/interface';
 

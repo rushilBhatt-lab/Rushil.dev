@@ -22,6 +22,7 @@ const ABOUTDATA = [
 			'Collaborate with cross-functional teams including designers, product managers, and backend developers to deliver high-quality features on time and within budget.',
 			'Participate in code reviews and contribute to the continuous improvement of the development process.',
 		],
+		techStack: ['React', 'Typescript', 'Redux', 'SCSS', 'Jira'],
 	},
 	{
 		subtitle: 'FQA Tester',
@@ -32,6 +33,7 @@ const ABOUTDATA = [
 			'Verifying, performing and creating different check plans.',
 			'Testing UI/UX across various platforms.',
 		],
+		techStack: ['Jira', 'Test Plans'],
 	},
 	{
 		subtitle: 'Freelance Web Developer',
@@ -43,6 +45,7 @@ const ABOUTDATA = [
 			'Performing major & minor upgrades as per the client’s request.',
 			'Bug fixing and assuring proper behaviour of the website.',
 		],
+		techStack: ['React', 'HTML', 'javascript', 'SCSS', 'Wordpress'],
 	},
 ];
 
