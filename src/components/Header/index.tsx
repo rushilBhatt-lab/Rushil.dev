@@ -3,9 +3,12 @@ import email from '../../assets/images/mail.png';
 import { useEffect } from 'react';
 import BackgroundParticles from '../Particles/Particles';
 import SocialLinks from 'components/socialLinks';
+import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 
 function Header() {
 	useEffect(() => {}, []);
+
+	const device = useDeviceDetection();
 
 	return (
 		<>
@@ -20,11 +23,13 @@ function Header() {
 						<div className="HeaderComponent__info">
 							<span className="txt-rotate HeaderComponent--color">Frontend developer based in 📍warsaw, poland</span>
 						</div>
-						<div className="HeaderComponent__contact">
-							<a href="Mailto:rushilbhatt533@gmail.com">
-								<img src={email} alt="email" className="contactpic" />
-							</a>
-						</div>
+						{device === 'desktop' && (
+							<div className="HeaderComponent__contact">
+								<a href="Mailto:rushilbhatt533@gmail.com">
+									<img src={email} alt="email" className="contactpic" />
+								</a>
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

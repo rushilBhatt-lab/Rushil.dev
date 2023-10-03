@@ -19,9 +19,27 @@ const MobileDrawer: FC = () => {
 			<SwipeableDrawer className="MobileDrawer__over" anchor="right" open={isDrawerOpen} onClose={toggleDrawer} onOpen={isDrawerOpen as any}>
 				<img src={CrossIcon} onClick={toggleDrawer} alt="crossIcon" />
 				<div className="MobileDrawer__navItem">
-					<li>{<Link to={APP_URL.about}>About</Link>}</li>
-					<li>{<Link to={APP_URL.portfolio}>Porfoilo</Link>}</li>
-					<li>{<Link to={APP_URL.contact}>Contact</Link>}</li>
+					<li>
+						{
+							<Link onClick={toggleDrawer} to={APP_URL.about}>
+								About
+							</Link>
+						}
+					</li>
+					<li>
+						{
+							<Link onClick={toggleDrawer} to={APP_URL.portfolio}>
+								Porfoilo
+							</Link>
+						}
+					</li>
+					<li>
+						{
+							<Link onClick={toggleDrawer} to={APP_URL.contact}>
+								Contact
+							</Link>
+						}
+					</li>
 				</div>
 			</SwipeableDrawer>
 		</div>

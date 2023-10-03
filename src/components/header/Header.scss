@@ -13,6 +13,10 @@
 		flex-direction: column;
 		font-size: 50px;
 		z-index: 1;
+
+			@media (max-width: 992px) {
+			height: 77vh;
+			}
 	}
 
 	&__box {
@@ -21,12 +25,19 @@
 		height: auto;
 		padding-right: 60px;
 		width: auto;
+		@media (max-width: 992px) {
+				padding-right: 0px;
+			}
 	}
 
 	&__name {
 		z-index: 2;
 		font-weight: 700;
 		font-size: 65px;
+
+		@media (max-width: 992px) {
+			font-size: 34px;
+		}
 	}
 
 	&__info {
@@ -35,6 +46,11 @@
 		padding-top: 20px;
 		font-weight: 500;
 		color: rgb(255, 255, 255, 0.8);
+
+		@media (max-width: 992px) {
+			font-size: 16px;
+			
+		}
 	}
 	@keyframes animateslash {
 		0% {

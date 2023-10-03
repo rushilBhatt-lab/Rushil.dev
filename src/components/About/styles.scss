@@ -8,6 +8,13 @@
 	margin-right: -15px;
 	margin-left: -15px;
 
+	@media 
+	(max-width: 992px) {
+		margin-left: 3px;
+		width: 92%
+		
+	}
+
 	&__title {
 		font-weight: 900;
 		margin: 4rem 0rem 1.5rem;
@@ -41,6 +48,11 @@
 		margin-left: 20px;
 		text-align: left;
 		list-style-type: disc;
+		color: #c6c6c6;
+
+		@media (max-width: 992px) {
+					font-size: calc(0.813em + 0.9px);
+			}
 	}
 
 	&__subTitle {

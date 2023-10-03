@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import GithubIcon from './Github.svg';
 import RedirectIcon from './Redirect.svg';
+import github from '../../assets/images/github-mark-white.png';
 import './styles.scss';
 
 interface Props {
@@ -15,7 +15,9 @@ const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, gith
 	return (
 		<div className="PortfolioCard">
 			<div className="PortfolioCard__container">
-				<div className="PortfolioCard__image"></div>
+				<div className="PortfolioCard__image">
+					<img src={RedirectIcon} />
+				</div>
 				<div className="PortfolioCard__text">
 					<h3>{title}</h3>
 					<p>{description}</p>
@@ -31,7 +33,7 @@ const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, gith
 						</a>
 						<a target="_blank" rel="noreferrer" href={githubLink}>
 							<p>Source Code</p>
-							<img src={GithubIcon} alt="Github Icon" />
+							<img src={github} alt="Github Icon" />
 						</a>
 					</div>
 				</div>

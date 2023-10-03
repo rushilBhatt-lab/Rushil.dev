@@ -31,7 +31,10 @@
 		li {
 			text-align: center;
 			width: fit-content;
-			margin: 3rem auto;
+			margin: 4rem auto;
+            font-size: calc(1.011em + 1.8px);
+            font-weight: 900;
+            text-transform: uppercase;
 
 			&::before {
 				content: '';
