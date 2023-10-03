@@ -1,5 +1,5 @@
 import Header from 'components/Header';
-import SocialLinks from 'components/socialLinks';
+import SocialLinks from 'components/SocialLinks';
 import NavigationMain from 'components/Navigation';
 
 const Layout = ({ children }: any) => {

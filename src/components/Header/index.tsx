@@ -1,9 +1,11 @@
 import email from '../../assets/images/mail.png';
 import { useEffect } from 'react';
 import BackgroundParticles from '../Particles/Particles';
-import SocialLinks from 'components/socialLinks';
+import SocialLinks from 'components/SocialLinks';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import './styles.scss';
+import { APP_URL } from 'common';
+import ArrowIcon from '../../assets/images/ArrowIcon.svg';
 
 function Header() {
 	useEffect(() => {}, []);
@@ -31,6 +33,13 @@ function Header() {
 							</div>
 						)}
 					</div>
+					{device === 'handheld' && (
+						<a className="HeaderComponent__link" href={APP_URL.about}>
+							<p>
+								See More About Me. <img src={ArrowIcon} />
+							</p>
+						</a>
+					)}
 				</div>
 			</div>
 		</>

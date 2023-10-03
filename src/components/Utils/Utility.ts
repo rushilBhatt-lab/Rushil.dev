@@ -18,3 +18,19 @@ export const isMobile = () => {
 
 	return check;
 };
+
+export const elementVisibility = (scrolledToBottom: boolean, scrollDir: string, element: string) => {
+	const className = element;
+	const visible = `${className}--visible`;
+	const hidden = `${className}--hidden`;
+
+	if (scrolledToBottom && scrollDir === 'down') {
+		return visible;
+	} else if (!scrolledToBottom && scrollDir === 'up') {
+		return visible;
+	} else if (!scrolledToBottom && scrollDir === 'down') {
+		return hidden;
+	} else {
+		return visible;
+	}
+};
