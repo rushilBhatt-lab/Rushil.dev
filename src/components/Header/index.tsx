@@ -1,9 +1,9 @@
-import './Header.scss';
 import email from '../../assets/images/mail.png';
 import { useEffect } from 'react';
 import BackgroundParticles from '../Particles/Particles';
 import SocialLinks from 'components/socialLinks';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
+import './styles.scss';
 
 function Header() {
 	useEffect(() => {}, []);
