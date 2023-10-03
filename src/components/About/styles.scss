@@ -8,11 +8,9 @@
 	margin-right: -15px;
 	margin-left: -15px;
 
-	@media 
-	(max-width: 992px) {
+	@media (max-width: 992px) {
 		margin-left: 3px;
-		width: 92%
-		
+		width: 92%;
 	}
 
 	&__title {
@@ -51,8 +49,8 @@
 		color: #c6c6c6;
 
 		@media (max-width: 992px) {
-					font-size: calc(0.813em + 0.9px);
-			}
+			font-size: calc(0.813em + 0.9px);
+		}
 	}
 
 	&__subTitle {
