@@ -1,8 +1,13 @@
 import { useForm } from 'react-hook-form';
 import './styles.scss';
+import { APP_URL } from 'common';
+import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
+import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 
 const Contact = () => {
 	const { handleSubmit, resetField, register } = useForm();
+	const device = useDeviceDetection();
+
 	return (
 		<div className="container">
 			<form className="ContactForm">
@@ -23,6 +28,13 @@ const Contact = () => {
 					Send Message
 				</button>
 			</form>
+			{device === 'handheld' && (
+				<a className="ContactForm__link" href={APP_URL.home}>
+					<p>
+						Go Back home. <ArrowIcon />
+					</p>
+				</a>
+			)}
 		</div>
 	);
 };

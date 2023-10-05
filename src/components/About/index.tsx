@@ -1,6 +1,11 @@
+import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
+import { APP_URL } from 'common';
+import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
 
 const About = () => {
+	const device = useDeviceDetection();
+
 	return (
 		<div className="container">
 			<div className="AboutPage">
@@ -62,6 +67,13 @@ const About = () => {
 						</ul>
 					</p>
 				</ul>
+				{device === 'handheld' && (
+					<a className="AboutPage__link" href={APP_URL.portfolio}>
+						<p>
+							Let's continue to my Projects. <ArrowIcon />
+						</p>
+					</a>
+				)}
 			</div>
 		</div>
 	);

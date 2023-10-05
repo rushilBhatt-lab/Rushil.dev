@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import BackgroundParticles from '../Particles/Particles';
 import SocialLinks from 'components/SocialLinks';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
-import './styles.scss';
 import { APP_URL } from 'common';
-import ArrowIcon from '../../assets/images/ArrowIcon.svg';
+import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
+import './styles.scss';
 
 function Header() {
 	useEffect(() => {}, []);
@@ -36,7 +36,8 @@ function Header() {
 					{device === 'handheld' && (
 						<a className="HeaderComponent__link" href={APP_URL.about}>
 							<p>
-								See More About Me. <img src={ArrowIcon} />
+								See More About Me.
+								<ArrowIcon />
 							</p>
 						</a>
 					)}

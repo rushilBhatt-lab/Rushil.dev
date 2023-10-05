@@ -92,4 +92,30 @@
 		text-align: center;
 		vertical-align: middle;
 	}
+
+	&__link {
+		font-size: 14px;
+		margin-top: 63px;
+
+		svg {
+			height: 30px;
+			width: 30px;
+			margin-left: 1rem;
+			animation-name: forward;
+			animation-duration: 0.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			vertical-align: middle;
+
+			@keyframes forward {
+				from {
+					margin-left: 1rem;
+				}
+
+				to {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
 }

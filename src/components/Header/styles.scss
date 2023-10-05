@@ -117,7 +117,7 @@
 	&__link {
 		font-size: 14px;
 		margin-top: 63px;
-		img {
+		svg {
 			height: 30px;
 			width: 30px;
 			margin-left: 1rem;
@@ -125,6 +125,7 @@
 			animation-duration: 0.5s;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;
+			vertical-align: middle;
 
 			@keyframes forward {
 				from {
