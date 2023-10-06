@@ -5,6 +5,7 @@ import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import { APP_URL } from 'common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
+import SocialLinks from 'components/SocialLinks';
 
 function Header() {
 	useEffect(() => {}, []);
@@ -13,7 +14,7 @@ function Header() {
 
 	return (
 		<>
-			{/* <SocialLinks /> */}
+			<SocialLinks />
 			<div className="HeaderComponent">
 				{/* <BackgroundParticles /> */}
 				<div className="HeaderComponent__wrapper">
