@@ -8,7 +8,7 @@ import AppContext, { AboutContext } from 'components/Utils/context';
 import PROJECTS_DATA from 'AppData/ProjectData';
 import ABOUTDATA from 'AppData/AboutData';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
-import SocialLinks from 'components/SocialLinks';
+import SocialLinks from './components/SocialLinks';
 
 function App() {
 	const device = useDeviceDetection();
