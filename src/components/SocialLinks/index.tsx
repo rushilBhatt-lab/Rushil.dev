@@ -2,7 +2,7 @@ import { FC } from 'react';
 import linkdin from '../../assets/images/linkedin logo.png';
 import github from '../../assets/images/github-mark-white.png';
 import './styles.scss';
-const SocialLinks: FC = () => {
+const socialLinks: FC = () => {
 	return (
 		<div className="SocialLinks">
 			<div className="SocialLinks__wrapper">
@@ -17,4 +17,4 @@ const SocialLinks: FC = () => {
 	);
 };
 
-export default SocialLinks;
+export default socialLinks;
