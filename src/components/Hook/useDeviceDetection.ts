@@ -1,5 +1,5 @@
+import { isMobile } from 'components/Utils/utility';
 import { useState, useEffect } from 'react';
-import { isMobile } from '../Utils/Utility';
 
 type DeviceType = 'handheld' | 'desktop';
 
