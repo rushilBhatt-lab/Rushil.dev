@@ -1,7 +1,6 @@
 import email from '../../assets/images/mail.png';
 import { useEffect } from 'react';
 import BackgroundParticles from '../Particles/Particles';
-import SocialLinks from 'components/socialLinks';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import { APP_URL } from 'common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
@@ -14,7 +13,7 @@ function Header() {
 
 	return (
 		<>
-			<SocialLinks />
+			{/* <SocialLinks /> */}
 			<div className="HeaderComponent">
 				{/* <BackgroundParticles /> */}
 				<div className="HeaderComponent__wrapper">
