@@ -6,13 +6,12 @@
 
 Users should be able to:
 
-- Adapt to the app's layout based on their device's screen size.
-- Observe hover states for interactive page elements.
-- Contact form.
+-   Adapt to the app's layout based on their device's screen size.
+-   Observe hover states for interactive page elements.
+-   Contact form.
 
 ### Built with
-- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![TypeScript](https://img.shields.io/badge/react-typescript?logo=Typescript&logoColor=blue&label=Typescript)
-- ![React-context](https://img.shields.io/badge/context-api)
 
-
+-   ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+-   ![TypeScript](https://img.shields.io/badge/react-typescript?logo=Typescript&logoColor=blue&label=Typescript)
+-   ![React-context](https://img.shields.io/badge/context-api)
