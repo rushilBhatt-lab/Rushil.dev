@@ -15,21 +15,18 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 	}
 
 	componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-		// You can log the error or perform other actions here
 		console.error('Error:', error);
 		console.error('Error Info:', errorInfo);
 
-		// Update state to indicate that an error has occurred
 		this.setState({ hasError: true });
 	}
 
 	render(): ReactNode {
 		if (this.state.hasError) {
-			// You can render a custom error message here
 			return <div>Something went wrong. Please try again later.</div>;
 		}
 
-		return this.props.children; // Render the child components as usual
+		return this.props.children;
 	}
 }
 
