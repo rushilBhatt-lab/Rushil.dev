@@ -32,8 +32,6 @@ const About = () => {
 							</li>
 							<li>Engage in code reviews and actively contribute to the ongoing enhancement of the development workflow.</li>
 						</ul>
-
-						<span className="AboutPage__techStack"></span>
 					</p>
 					<li className="AboutPage__subTitle">Freelancer </li>
 					<span className="AboutPage__description">
