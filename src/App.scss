@@ -27,11 +27,11 @@ body {
 }
 ::-webkit-scrollbar {
 	width: 4px;
-	color: #c70039;
+	color: grey;
 	transition: all 0.4s ease;
 }
 ::-webkit-scrollbar-thumb {
-	background: #c70039;
+	background: grey;
 	border-radius: 4px;
 	width: 4px;
 	transition: all 0.4s ease;
@@ -61,7 +61,6 @@ b,
 label,
 textarea,
 th {
-	font-family: 'Blorado', sans-serif;
 	text-rendering: geometricPrecision;
 	color: #e1e1e1;
 }

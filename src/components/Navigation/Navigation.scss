@@ -16,7 +16,6 @@
 
 		@media (min-width: 992px) {
 			flex-flow: row nowrap;
-			// justify-content: flex-start;
 		}
 
 		@media (max-width: 991px) {
@@ -24,16 +23,15 @@
 			font-size: 0%;
 		}
 	}
-	a {
-		padding: 10px 14px;
-		text-decoration: none;
-		color: #e1e1e1;
-		font-size: 1.7rem;
-		opacity: 0.7;
-		transition: all 0.4s ease;
-		cursor: pointer;
-		&:hover {
-			text-decoration: underline;
+
+	&__links {
+		a {
+			padding: 10px 14px;
+			text-decoration: none;
+			color: #e1e1e1;
+			font-size: 1.7rem;
+			transition: all 0.4s ease;
+			cursor: pointer;
 		}
 	}
 }

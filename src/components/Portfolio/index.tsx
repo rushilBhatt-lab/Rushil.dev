@@ -23,6 +23,7 @@ const Portfolio = () => {
 						stack={project.technologies}
 						liveAppLink={project.link}
 						githubLink={project.githubLink}
+						imageUrl={project.imageUrl}
 					/>
 				))}
 				{device === 'handheld' && (

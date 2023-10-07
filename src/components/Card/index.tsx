@@ -4,19 +4,19 @@ import github from '../../assets/images/github-mark-white.png';
 import './styles.scss';
 
 interface Props {
-	image?: HTMLImageElement;
+	imageUrl?: string;
 	title: string;
 	description: string;
 	stack: string[];
 	liveAppLink: string;
 	githubLink: string;
 }
-const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, githubLink }) => {
+const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, githubLink, imageUrl }) => {
 	return (
 		<div className="PortfolioCard">
 			<div className="PortfolioCard__container">
 				<div className="PortfolioCard__image">
-					<img src={RedirectIcon} />
+					<img src={imageUrl} alt="test" />
 				</div>
 				<div className="PortfolioCard__text">
 					<h3>{title}</h3>

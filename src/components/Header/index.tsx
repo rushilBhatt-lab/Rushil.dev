@@ -6,6 +6,8 @@ import { APP_URL } from 'common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
 import SocialLinks from 'components/SocialLinks';
+import { motion } from 'framer-motion';
+import { getTransitions } from 'components/Utils/utility';
 
 function Header() {
 	useEffect(() => {}, []);
@@ -20,10 +22,14 @@ function Header() {
 				<div className="HeaderComponent__wrapper">
 					<div className="HeaderComponent__box">
 						<div className="HeaderComponent__name">
-							<span className="HeaderComponent--color">Hi, I'm Rushil </span>Bhatt 👋🏽
+							<motion.span {...getTransitions(0.1)} className="HeaderComponent--color">
+								Hi, I'm Rushil Bhatt 👋🏽
+							</motion.span>
 						</div>
 						<div className="HeaderComponent__info">
-							<span className="txt-rotate HeaderComponent--color">Frontend developer based in 📍warsaw, poland</span>
+							<motion.span {...getTransitions(0.3)} className="txt-rotate HeaderComponent--color">
+								Frontend developer based in 📍warsaw, poland
+							</motion.span>
 						</div>
 						{device === 'desktop' && (
 							<div className="HeaderComponent__contact">
@@ -35,10 +41,10 @@ function Header() {
 					</div>
 					{device === 'handheld' && (
 						<a className="HeaderComponent__link" href={APP_URL.about}>
-							<p>
+							<motion.p {...getTransitions(0.4)}>
 								See More About Me.
 								<ArrowIcon />
-							</p>
+							</motion.p>
 						</a>
 					)}
 				</div>

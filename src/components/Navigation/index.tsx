@@ -11,7 +11,7 @@ const NavigationMain = () => {
 	return (
 		<div className="Navigation">
 			<div className="Navigation__wrapper">
-				<div className="Navigation__logo">
+				<div className="Navigation__links">
 					<Link to={APP_URL.home}>Rushil.dev</Link>
 				</div>
 				{device === 'handheld' && <MobileDrawer />}
