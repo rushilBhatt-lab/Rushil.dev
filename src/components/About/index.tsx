@@ -20,21 +20,22 @@ const About = () => {
 					<p className="AboutPage__description">
 						<ul>
 							<li>
-								Develop features to attract more users and increase player retention, such as expanding the betting functionality,
-								implementing analytic tools to understand player behavior, and creating a feature that provides team stats within the
-								application.
+								Create new features aimed at both attracting a larger user base and improving player retention. These features include
+								expanding betting options, implementing analytics tools to gain insights into player behavior, and introducing a
+								feature that offers team statistics within the application.
 							</li>
 							<li>
-								Craft features and changes to the website to ensure smooth performance on all device types and OS versions, with a
-								focus on gathering user device details to improve the development process.
+								Skillfully design and implement website features and updates to ensure seamless performance across various device
+								types and operating system versions. Emphasize the collection of user device information to enhance the development
+								process.
 							</li>
-							<li>Implement animations to enhance the user experience and trigger positive emotions in players.</li>
+							<li>Incorporate animations to elevate the user experience and evoke positive emotions among players.</li>
 							<li>Ensure the best UX practices are implemented throughout the development process.</li>
 							<li>
-								Collaborate with cross-functional teams including designers, product managers, and backend developers to deliver
-								high-quality features on time and within budget.
+								Work closely with multifaceted teams, encompassing designers, product managers, and backend developers, to ensure the
+								timely and cost-effective delivery of top-notch features.
 							</li>
-							<li>Participate in code reviews and contribute to the continuous improvement of the development process.</li>
+							<li>Engage in code reviews and actively contribute to the ongoing enhancement of the development workflow.</li>
 						</ul>
 
 						<span className="AboutPage__techStack"></span>
