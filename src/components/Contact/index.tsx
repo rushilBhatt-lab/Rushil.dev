@@ -1,16 +1,16 @@
 import { useForm } from 'react-hook-form';
-import './styles.scss';
 import { APP_URL } from 'common';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
+import './styles.scss';
 
 const Contact = () => {
-	const { handleSubmit, resetField, register } = useForm();
+	const { register } = useForm();
 	const device = useDeviceDetection();
 
 	return (
 		<div className="container">
-			<form className="ContactForm">
+			<form className="ContactForm" action="https://formspree.io/f/mqkvgoaw" method="POST">
 				<h1 className="ContactForm__title">Contact Me.</h1>
 				<input className="ContactForm__textFields" type="text" placeholder="Name" {...register('Name', { required: true, maxLength: 80 })} />
 				<input
