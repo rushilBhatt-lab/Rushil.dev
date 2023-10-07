@@ -24,11 +24,6 @@ const About = () => {
 								expanding betting options, implementing analytics tools to gain insights into player behavior, and introducing a
 								feature that offers team statistics within the application.
 							</li>
-							<li>
-								Skillfully design and implement website features and updates to ensure seamless performance across various device
-								types and operating system versions. Emphasize the collection of user device information to enhance the development
-								process.
-							</li>
 							<li>Incorporate animations to elevate the user experience and evoke positive emotions among players.</li>
 							<li>Ensure the best UX practices are implemented throughout the development process.</li>
 							<li>
