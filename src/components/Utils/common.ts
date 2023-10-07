@@ -1,5 +1,5 @@
 export const APP_URL = {
-	home: '/home',
+	home: '/',
 	about: '/about',
 	portfolio: '/portfolio',
 	contact: '/contact',

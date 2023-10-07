@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { APP_URL } from 'common';
+import { APP_URL } from 'components/Utils/common';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';

@@ -1,10 +1,10 @@
 import { FC, useState } from 'react';
 import Button from '@mui/material/Button';
-import './styles.scss';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import CrossIcon from './CrossIcon.svg';
 import { Link } from 'react-router-dom';
-import { APP_URL } from 'common';
+import { APP_URL } from 'components/Utils/common';
+import './styles.scss';
 
 const MobileDrawer: FC = () => {
 	const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -29,7 +29,7 @@ const MobileDrawer: FC = () => {
 					<li>
 						{
 							<Link onClick={toggleDrawer} to={APP_URL.portfolio}>
-								Porfoilo
+								Portfoilo
 							</Link>
 						}
 					</li>

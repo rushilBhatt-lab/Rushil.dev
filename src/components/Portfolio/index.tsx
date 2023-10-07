@@ -3,7 +3,7 @@ import PortfolioCard from 'components/Card';
 import AppContext from 'components/Utils/context';
 import { ProjectDataInterface } from 'AppData/interface';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
-import { APP_URL } from 'common';
+import { APP_URL } from 'components/Utils/common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
 

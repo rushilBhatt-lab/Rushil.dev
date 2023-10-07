@@ -1,6 +1,5 @@
-import { APP_URL } from 'common';
+import { APP_URL } from 'components/Utils/common';
 import { Route, Routes } from 'react-router-dom';
-import './App.scss';
 import * as asyncComponent from './asyncComponents';
 import { Suspense } from 'react';
 import NavigationMain from 'components/Navigation';
@@ -9,6 +8,8 @@ import PROJECTS_DATA from 'AppData/ProjectData';
 import ABOUTDATA from 'AppData/AboutData';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import SocialLinks from 'components/SocialLinks';
+import './App.scss';
+import NotFoundPage from 'components/ErrorPage/404';
 
 function App() {
 	const device = useDeviceDetection();
@@ -24,6 +25,7 @@ function App() {
 							<Route path={APP_URL.about} Component={asyncComponent.about} />
 							<Route path={APP_URL.portfolio} Component={asyncComponent.portfolio} />
 							<Route path={APP_URL.contact} Component={asyncComponent.contact} />
+							<Route path="*" element={<NotFoundPage />} />
 						</Routes>
 					</Suspense>
 					{device === 'handheld' && <SocialLinks />}
