@@ -8,8 +8,9 @@ import PROJECTS_DATA from 'AppData/ProjectData';
 import ABOUTDATA from 'AppData/AboutData';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import SocialLinks from 'components/SocialLinks';
-import './App.scss';
 import NotFoundPage from 'components/ErrorPage/404';
+import { Analytics } from '@vercel/analytics/react';
+import './App.scss';
 
 function App() {
 	const device = useDeviceDetection();
@@ -19,6 +20,7 @@ function App() {
 			<AboutContext.Provider value={ABOUTDATA}>
 				<div className="App">
 					<NavigationMain />
+					<Analytics />
 					<Suspense fallback={<div>Loading..</div>}>
 						<Routes>
 							<Route path={APP_URL.home} Component={asyncComponent.home} />
