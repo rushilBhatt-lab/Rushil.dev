@@ -12,6 +12,7 @@ interface Props {
 	githubLink: string;
 }
 const PortfolioCard: FC<Props> = ({ title, description, stack, liveAppLink, githubLink, imageUrl }) => {
+	console.log(githubLink);
 	return (
 		<div className="PortfolioCard">
 			<div className="PortfolioCard__container">
