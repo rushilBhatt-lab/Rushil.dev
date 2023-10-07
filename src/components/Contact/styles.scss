@@ -57,6 +57,13 @@
 		}
 	}
 
+	&__textAreaBox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
 	&__textArea {
 		background: transparent;
 		margin-bottom: 2rem;
@@ -117,5 +124,13 @@
 				}
 			}
 		}
+	}
+
+	&__error {
+		margin-top: -30px;
+		margin-bottom: 25px;
+		color: #f84747;
+		height: 1.5rem;
+		display: block;
 	}
 }

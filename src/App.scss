@@ -23,7 +23,6 @@ body {
 	padding: 0%;
 	margin: 0%;
 	box-sizing: border-box;
-	font-family: NeurialGrotesk;
 }
 ::-webkit-scrollbar {
 	width: 4px;
@@ -61,6 +60,7 @@ b,
 label,
 textarea,
 th {
+	font-family: Blorado, sans-serif;
 	text-rendering: geometricPrecision;
 	color: #e1e1e1;
 }
