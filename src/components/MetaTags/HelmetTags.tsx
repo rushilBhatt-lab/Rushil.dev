@@ -9,7 +9,7 @@ interface Props {
 	is404?: boolean;
 }
 
-const HelmetMetaTags = ({ title = 'Rushil.dev', description = 'Portfolio for Rushil.dev', ogtype = 'website', ogurl, ogimage, is404 }: Props) => {
+const HelmetMetaTags = ({ title = 'Rushil.dev', description = 'Portfolio of Rushil bhatt', ogtype = 'website', ogurl, ogimage, is404 }: Props) => {
 	const canonicalLink = window.location.href;
 
 	return (
@@ -19,12 +19,15 @@ const HelmetMetaTags = ({ title = 'Rushil.dev', description = 'Portfolio for Rus
 			<meta name="og:description" content={description} />
 			<meta property="og:title" content={title} />
 			<meta property="og:type" content={ogtype} />
+			<meta property="og:url" content={ogurl ? `${'https://rushil-dev.vercel.app/'}${ogurl}` : canonicalLink} />
+
+			<meta property="og:image" content={ogimage ? ogimage : `${'https://rushil-dev.vercel.app/'}/favicon.ico`} />
 			<link rel="canonical" href={canonicalLink} />
 
 			<link rel="stylesheet" media="all and (orientation:portrait)" href="" />
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover" />
-			<meta name="theme-color" content="#004f51" />
+			<meta name="theme-color" content="#020a13" />
 			<meta name="mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-status-bar-style" content="translucent" />

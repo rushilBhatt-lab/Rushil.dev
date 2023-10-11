@@ -5,13 +5,16 @@ import './App.scss';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import ErrorBoundary from 'components/ErrorBoundary';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<ErrorBoundary>
-				<App />
+				<HelmetProvider>
+					<App />
+				</HelmetProvider>
 			</ErrorBoundary>
 		</BrowserRouter>
 	</React.StrictMode>,
