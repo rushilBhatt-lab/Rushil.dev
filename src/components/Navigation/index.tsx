@@ -18,7 +18,7 @@ const NavigationMain = () => {
 				{device === 'desktop' && (
 					<div className="Navigation__links">
 						{location.pathname !== APP_URL.about && <Link to={APP_URL.about}>About</Link>}
-						{location.pathname !== APP_URL.portfolio && <Link to={APP_URL.portfolio}>Portfoilo</Link>}
+						{location.pathname !== APP_URL.portfolio && <Link to={APP_URL.portfolio}>Portfolio</Link>}
 						{location.pathname !== APP_URL.contact && <Link to={APP_URL.contact}>Contact</Link>}
 					</div>
 				)}
