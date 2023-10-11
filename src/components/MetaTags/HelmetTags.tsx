@@ -20,8 +20,6 @@ const HelmetMetaTags = ({ title = 'Rushil.dev', description = 'Portfolio of Rush
 			<meta property="og:title" content={title} />
 			<meta property="og:type" content={ogtype} />
 			<meta property="og:url" content={ogurl ? `${'https://rushil-dev.vercel.app/'}${ogurl}` : canonicalLink} />
-
-			<meta property="og:image" content={ogimage ? ogimage : `${'https://rushil-dev.vercel.app/'}/favicon.ico`} />
 			<link rel="canonical" href={canonicalLink} />
 
 			<link rel="stylesheet" media="all and (orientation:portrait)" href="" />

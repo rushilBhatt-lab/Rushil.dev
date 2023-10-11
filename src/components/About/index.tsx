@@ -1,16 +1,16 @@
+import HelmetMetaTags from 'components/MetaTags/HelmetTags';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import { APP_URL } from 'components/Utils/common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
-import HelmetMetaTags from 'components/MetaTags/HelmetTags';
 
 const About = () => {
 	const device = useDeviceDetection();
 
 	return (
 		<>
+			<HelmetMetaTags title="About - Rushil Bhatt's Portfolio" description="Timeline about my expiriences" ogurl="about" />
 			<div className="container">
-				<HelmetMetaTags title="About- Rushil Bhatt's Portfolio" description="Timeline about my expiriences" ogurl="about" />
 				<div className="AboutPage">
 					<h1 className="AboutPage__title">About Me.</h1>
 					<ul className="AboutPage__timeline">

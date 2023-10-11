@@ -6,6 +6,11 @@
 	grid-template-rows: auto auto;
 	height: auto;
 	width: 100%;
+	margin-left: -47px;
+
+		@media (max-width: 992px) {
+					margin-left: 0px;
+			}
 
 	&__container {
 		flex-direction: row;
