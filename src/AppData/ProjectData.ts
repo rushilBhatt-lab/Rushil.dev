@@ -9,7 +9,6 @@ const PROJECTS_DATA = [
 		type: ['project', 'portfolio', 'learning'],
 		technologies: ['React', 'CSS', 'Javascript', 'Drag & Drop API', 'Redux'],
 		imageUrl: 'https://i.ibb.co/HCjtbdh/ezgif-com-video-to-gif.gif"',
-		mobileImageUrl: '',
 	},
 	{
 		title: 'Crypto Currenices Tracker',
@@ -20,7 +19,6 @@ const PROJECTS_DATA = [
 		type: ['project', 'portfolio', 'learning'],
 		technologies: ['React', 'Sass & CSS', 'Javascript', 'Typescript'],
 		imageUrl: 'https://i.ibb.co/r2NGKLy/crypto-tacker.gif',
-		mobileImageUrl: '',
 	},
 ];
 

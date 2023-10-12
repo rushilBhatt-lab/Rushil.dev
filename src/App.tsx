@@ -1,9 +1,9 @@
-import { APP_URL } from 'components/Utils/common';
+import { APP_URL } from 'Utils/common';
 import { Route, Routes } from 'react-router-dom';
 import * as asyncComponent from './asyncComponents';
 import { Suspense } from 'react';
 import NavigationMain from 'components/Navigation';
-import AppContext from 'components/Utils/context';
+import AppContext from 'Utils/context';
 import PROJECTS_DATA from 'AppData/ProjectData';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import SocialLinks from 'components/SocialLinks';

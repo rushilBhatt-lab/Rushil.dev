@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import PortfolioCard from 'components/Card';
-import AppContext from 'components/Utils/context';
+import AppContext from 'Utils/context';
 import { ProjectDataInterface } from 'AppData/interface';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
-import { APP_URL } from 'components/Utils/common';
+import { APP_URL } from 'Utils/common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import HelmetMetaTags from 'components/MetaTags/HelmetTags';
 import './styles.scss';

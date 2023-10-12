@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 interface Props {
-	title?: any;
-	description?: any;
+	title?: string;
+	description?: string;
 	ogtype?: string;
 	ogurl?: string;
 	ogimage?: string;

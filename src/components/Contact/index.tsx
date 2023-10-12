@@ -3,7 +3,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
 import HelmetMetaTags from 'components/MetaTags/HelmetTags';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
-import { APP_URL } from 'components/Utils/common';
+import { APP_URL } from 'Utils/common';
 import { formInterface } from './interface';
 import './styles.scss';
 

@@ -1,6 +1,6 @@
 import HelmetMetaTags from 'components/MetaTags/HelmetTags';
 import { useDeviceDetection } from 'components/Hook/useDeviceDetection';
-import { APP_URL } from 'components/Utils/common';
+import { APP_URL } from 'Utils/common';
 import { ReactComponent as ArrowIcon } from '../../assets/images/ArrowIcon.svg';
 import './styles.scss';
 
