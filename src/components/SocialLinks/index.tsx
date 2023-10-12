@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import linkdin from '../../assets/images/linkedin logo.png';
 import github from '../../assets/images/github-mark-white.png';
-import './socialLinks.scss';
-function SocialLinks() {
+import './styles.scss';
+const SocialLinks: FC = () => {
 	return (
 		<div className="SocialLinks">
 			<div className="SocialLinks__wrapper">
@@ -14,6 +15,6 @@ function SocialLinks() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default SocialLinks;

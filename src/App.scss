@@ -1,4 +1,5 @@
 @import 'assets/stylings/colors';
+@import 'assets/stylings/fonts.scss';
 
 .App {
 	text-align: center;
@@ -8,7 +9,12 @@ body {
 	height: auto;
 	overflow-x: hidden;
 	width: 100%;
-	background: #171717;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #020a13 !important;
+	padding-right: 0px !important;
+	margin: 0;
 }
 
 * {
@@ -18,11 +24,11 @@ body {
 }
 ::-webkit-scrollbar {
 	width: 4px;
-	color: #c70039;
+	color: grey;
 	transition: all 0.4s ease;
 }
 ::-webkit-scrollbar-thumb {
-	background: #c70039;
+	background: grey;
 	border-radius: 4px;
 	width: 4px;
 	transition: all 0.4s ease;
@@ -36,4 +42,51 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input[type='text'],
+input[type='value'],
+b,
+label,
+textarea,
+th {
+	font-family: Blorado, sans-serif;
+	text-rendering: geometricPrecision;
+	color: #e1e1e1;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		max-width: 960px;
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		max-width: 720px;
+	}
+
+	@media (min-width: 576px) and (max-width: 767px) {
+		max-width: 540px;
+	}
+}
+
+a {
+	text-decoration: none;
 }
