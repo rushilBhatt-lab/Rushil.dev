@@ -26,7 +26,7 @@ function Header() {
 						</div>
 						<div className="HeaderComponent__info">
 							<motion.span {...getTransitions(0.3)} className="txt-rotate HeaderComponent--color">
-								Frontend developer based in 📍warsaw, poland
+								FullStack developer based in 📍warsaw, poland
 							</motion.span>
 						</div>
 						{device === 'desktop' && (

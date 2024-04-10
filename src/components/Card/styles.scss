@@ -89,10 +89,8 @@
 		gap: 1rem;
 		justify-content: center;
 		margin-top: 1rem;
+		flex-wrap: wrap;
 
-		@media (max-width: 991px) {
-			flex-wrap: wrap;
-		}
 
 		p {
 			border: 1px solid #4ba5f9;

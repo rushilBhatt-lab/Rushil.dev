@@ -14,7 +14,7 @@ const About = () => {
 				<div className="AboutPage">
 					<h1 className="AboutPage__title">About Me.</h1>
 					<ul className="AboutPage__timeline">
-						<li className="AboutPage__subTitle">Frontend React Developer</li>
+						<li className="AboutPage__subTitle">FullStack Developer</li>
 						<span className="AboutPage__description">
 							<p className="AboutPage__timePeriod">October 2021 - Present</p>
 							<p className="AboutPage__location">📍 Warsaw, Poland</p>
